@@ -1,0 +1,566 @@
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body {
+        max-height: 100vh;
+    }
+    
+    header {
+        background: linear-gradient(-180deg, #f53d2d, #f63);
+        position: fixed;
+        top: -10px;
+        z-index: 99;
+        height: 140px;
+    }
+    
+    .nav-header {
+        position: relative;
+        background: linear-gradient(-180deg, #f53d2d, #f53d2d);
+        height: 40px;
+    }
+    
+    .nav-left {
+        position: absolute;
+        float: left;
+        left: 5%;
+        width: 50%;
+        overflow: auto;
+    }
+    
+    .nav-left .tooptip-alt {
+        position: fixed;
+        top: 4%;
+        left: 14%;
+        z-index: 99999999999;
+        display: none;
+    }
+    
+    .nav-left #UD:hover+.tooptip-alt {
+        display: block;
+    }
+    
+    .nav-left .tooptip-alt img {
+        width: 200px;
+    }
+    
+    .nav-left a {
+        float: left;
+        font-size: 0.8125rem;
+        font-weight: 200;
+        border-right: 1px solid hsla(0, 0%, 100%, .26);
+    }
+    
+    .nav-left .icon-face {
+        color: white;
+        font-size: 25px;
+        border-right: none;
+    }
+    
+    .nav-right {
+        position: absolute;
+        left: 70%;
+        float: left;
+        width: 40%;
+        overflow: auto;
+    }
+    
+    .nav-right .tooptip-thongbao {
+        position: fixed;
+        top: 4%;
+        left: 60%;
+        z-index: 99999999999;
+        display: none;
+    }
+    
+    .nav-right #TB:hover+.tooptip-thongbao {
+        display: block;
+    }
+    
+    .nav-right .tooptip-thongbao img {
+        width: 400px;
+    }
+    
+    .nav-right a {
+        float: left;
+        font-size: 0.8125rem;
+        font-weight: 200;
+    }
+    
+    .nav-right .icon-bell {
+        font-size: 20px;
+        color: white;
+    }
+    
+    .nav-right #nav-link-dk {
+        border-right: 1px solid hsla(0, 0%, 100%, .26);
+    }
+    
+    .header-logo {
+        margin-left: 150px;
+        width: 40%;
+        position: absolute;
+        top: 15px;
+        left: 40px;
+    }
+    
+    .input-group input {
+        position: absolute;
+        top: 30px;
+        padding-top: 31px;
+    }
+    
+    .input-group span {
+        padding: 18px;
+        position: absolute;
+        left: 91%;
+        top: 30px;
+        color: white;
+        bottom: 10px;
+        background-color: rgba(255, 76, 6, 0.897);
+        z-index: 999;
+    }
+    
+    @media only screen and (max-width:1200px) {
+        .input-group span {
+            padding: 18px;
+            position: absolute;
+            left: 93%;
+            top: 30px;
+            color: white;
+            bottom: 10px;
+            background-color: rgba(255, 76, 6, 0.897);
+            z-index: 999;
+        }
+    }
+    
+    .header-logo svg {
+        height: 65px;
+    }
+    
+    .form-inline {
+        height: 80px;
+    }
+    
+    .box-text {
+        background: linear-gradient(-180deg, #f53d2d, #f63);
+        border-radius: 6%;
+        padding: 0.552rem 1.15rem;
+        text-align: center;
+        position: absolute;
+        left: 45%;
+        top: -30px;
+    }
+    
+    .ke {
+        position: relative;
+    }
+    
+    .gach {
+        margin-top: 100px
+    }
+    
+    .sale {
+        top: 120px;
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+    }
+    
+    @media only screen and (max-width:1200px) {
+        .sale {
+            top: 120px;
+            position: absolute;
+            z-index: 0;
+            width: 140%;
+            left: 4%;
+        }
+    }
+    
+    .sale .sale-box {
+        width: 90%;
+        margin-left: 74px;
+    }
+    
+    .icon {
+        position: relative;
+        left: 7%;
+        width: 88%;
+    }
+    
+    .icon .icon-link {
+        float: left;
+        width: 4%;
+        margin-left: 68px;
+    }
+    
+    .icon .icon-link img {
+        width: 55px;
+    }
+    
+    .icon .icon-link p {
+        font-size: 0.5125rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    
+    .product-sp {
+        margin-left: 410px;
+        position: absolute;
+        left: 20px;
+        top: 80%;
+    }
+    
+    .product-sp a {
+        float: left;
+        color: white;
+        margin-left: 15px;
+        font-size: 0.7125rem;
+        font-weight: 200;
+        border: none;
+        padding: 2px;
+    }
+    
+    .product-sp a:hover {
+        text-decoration: none;
+        color: white;
+    }
+    
+    #btn-shoping-cart {
+        font-size: 25px;
+        color: white;
+        background-color: rgba(255, 76, 6, 0.897);
+        border: rgba(255, 76, 6, 0.897);
+    }
+    
+    .welcome-package-banner {
+        position: absolute;
+        width: 100%;
+        top: 580px;
+        left: 5%;
+    }
+    
+    @media only screen and (max-width:1200px) {
+        .welcome-package-banner {
+            position: absolute;
+            width: 140%;
+            top: 580px;
+            left: 11%;
+        }
+    }
+    
+    .welcome-package-banner-img {
+        position: absolute;
+        background-image: url(https://cf.shopee.vn/file/314a465661c0ea355077972f0db7aed8_xxhdpi);
+        margin-top: 20px;
+        height: 110px;
+        width: 88%;
+        background-size: cover;
+        background-position: 50%;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    /* .welcome-package-banner-img {
+        width: 88%;
+    } */
+    
+    .danhmuc-sp {
+        top: 700px;
+        position: absolute;
+        left: 3%;
+        background-color: rgb(238, 237, 237);
+    }
+    
+    @media only screen and (max-width:1200px) {
+        .danhmuc-sp {
+            top: 700px;
+            position: absolute;
+            left: 8%;
+            background-color: rgb(238, 237, 237);
+        }
+    }
+    
+    .danhmuc-sp .ten-danhmuc {
+        width: 1260px;
+    }
+    
+    .danhmuc-sp h3 {
+        font-size: 22px;
+        margin-left: 5px;
+        color: rgb(133, 131, 131);
+    }
+    
+    .danhmuc-sp .card-group .card img {
+        width: 100px;
+        margin-left: 5px;
+    }
+    
+    .danhmuc-sp .card-group {
+        background-color: white;
+        padding: 5px;
+        width: 1260px;
+    }
+    
+    .danhmuc-sp .card-group .card {
+        text-align: center;
+    }
+    
+    .danhmuc-sp .card-group .card h5 {
+        font-size: 13px;
+    }
+    
+    .flash_sale {
+        position: absolute;
+        top: 1200px;
+        width: 1260px;
+        left: 6%;
+    }
+    
+    @media only screen and (max-width:1200px) {
+        .flash_sale {
+            position: absolute;
+            top: 1200px;
+            width: 1260px;
+            left: 13%;
+        }
+    }
+    
+    .flash_sale .owl-carousel {
+        width: 100%;
+        background-color: white;
+    }
+    
+    .flash_sale .owl-carousel .item {
+        width: 190px;
+        height: 290px;
+    }
+    
+    .logo-flash img {
+        width: 120px;
+    }
+    
+    .progress {
+        background-color: #f5815e;
+    }
+    
+    .sunplay {
+        position: absolute;
+        top: 1600px;
+        left: 5%;
+    }
+    
+    @media only screen and (max-width:1200px) {
+        .sunplay {
+            position: absolute;
+            top: 1600px;
+            left: 11%;
+        }
+    }
+    
+    .sunplay .hinh {
+        width: 1200px;
+    }
+    
+    .sunplay .hinh img {
+        width: 460px;
+    }
+    
+    .ShopMall {
+        position: absolute;
+        top: 1770px;
+        left: 6%;
+    }
+    
+    @media only screen and (max-width:1200px) {
+        .ShopMall {
+            position: absolute;
+            top: 1770px;
+            left: 12%;
+        }
+    }
+    
+    .ShopMall .ShopMall-sp {
+        width: 1280px;
+    }
+    
+    .card-body1 {
+        margin-top: -25px;
+        margin-left: 50px;
+        color: red;
+        display: grid;
+    }
+    
+    .xu-huong {
+        position: absolute;
+        top: 2300px;
+        left: 7%;
+    }
+    
+    @media only screen and (max-width:1200px) {
+        .xu-huong {
+            position: absolute;
+            top: 2300px;
+            left: 14%;
+        }
+    }
+    
+    .xu-huong .xu-huong-ten {
+        width: 1260px;
+    }
+    
+    .xu-huong .xu-huong-sp {
+        width: 1260px;
+    }
+    
+    .card-body2 {
+        float: left;
+        width: 50%;
+    }
+    
+    .card-text {
+        margin-top: 10px;
+    }
+    
+    .card-img {
+        float: left;
+        height: 90px;
+    }
+    
+    .timkiem {
+        position: absolute;
+        top: 2480px;
+        left: 7%;
+    }
+    
+    @media only screen and (max-width:1200px) {
+        .timkiem {
+            position: absolute;
+            top: 2480px;
+            left: 14%;
+        }
+    }
+    
+    .timkiem .timkiem-ten {
+        width: 1260px;
+    }
+    
+    .timkiem .sp-goiy {
+        width: 1260px;
+    }
+    
+    .timkiem .sp-goiy .card-goiy {
+        width: 200px;
+        transition: 0.5s;
+        border-bottom: rgb(233, 230, 230) solid 1px;
+        margin: 5px;
+    }
+    
+    .timkiem .sp-goiy .card-goiy .card-body {
+        margin-top: -24px;
+    }
+    
+    .timkiem .sp-goiy .card-goiy .card-body .card-text {
+        margin-top: 0px;
+    }
+    
+    .timkiem .sp-goiy .card-goiy:hover {
+        border: solid 1px tomato;
+        border-bottom: white solid 1px;
+    }
+    
+    .timkiem .sp-goiy .card-goiy .tuong-ung {
+        background-color: #f63;
+        width: 200px;
+        height: 35px;
+        margin-left: 0px;
+        display: none;
+        margin-top: -10px;
+        color: white;
+    }
+    
+    .timkiem .sp-goiy .card-goiy:hover .tuong-ung {
+        display: block;
+    }
+    
+    .gach-ke {
+        position: absolute;
+        top: 4150px;
+        border: solid 2px rgb(255, 94, 0);
+        background-color: rgb(255, 94, 0);
+        width: 1460px;
+    }
+    
+    .footer {
+        position: absolute;
+        top: 4200px;
+    }
+    
+    @media only screen and (max-width:1200px) {
+        .footer {
+            position: absolute;
+            top: 4200px;
+            left: 6%;
+        }
+    }
+    
+    .footer .content-footer {
+        margin-left: 70px;
+        width: 1260px;
+    }
+    
+    .footer .content-footer h2 {
+        line-height: 1.7;
+        font-size: .975rem;
+        font-weight: 700;
+        color: rgba(0, 0, 0, .54);
+    }
+    
+    .footer .content-footer p {
+        font-size: .85rem;
+        color: rgba(0, 0, 0, .54);
+        line-height: 1.4;
+        margin: .625rem 0 0;
+    }
+    
+    .gach-ke-1 {
+        position: absolute;
+        top: 4900px;
+        left: 80px;
+        border: solid 1px rgb(172, 170, 170);
+        background-color: rgb(207, 203, 200);
+        width: 1300px;
+    }
+    
+    .content-footer2 {
+        position: absolute;
+        top: 5000px;
+        left: 10%;
+        width: 1260px;
+    }
+    
+    @media only screen and (max-width:1200px) {
+        .content-footer2 {
+            position: absolute;
+            top: 5000px;
+            left: 15%;
+            width: 1260px;
+        }
+    }
+    
+    .content-footer2 .info a {
+        text-decoration: none;
+        color: black;
+        line-height: 3;
+        font-size: .85rem;
+        color: rgba(0, 0, 0, .54);
+    }
+    
+    .content-footer2 .thanhtoan img {
+        width: 200px;
+    }
+    
+    .content-footer2 .icon img {
+        width: 40px;
+    }
